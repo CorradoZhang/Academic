@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yu Zhang | Academic Homepage</title>
+    <meta name="description" content="Yu Zhang's academic homepage: education, experience, projects, awards and skills.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="identity">
+          <h1>YU ZHANG</h1>
+        </div>
+        <nav class="site-nav">
+          <a href="index.html">About</a>
+          <a href="publications.html">Publications</a>
+          <a href="talks.html">Talks</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="cv.html">CV</a>
+          <a href="guide.html">Guide</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="about" class="about">
+        <div class="about-grid">
+          <aside class="about-sidebar">
+            <img class="avatar" src="avatar.jpg" alt="Portrait of Yu Zhang" onerror="this.onerror=null;this.src='avatar.svg'">
+            <ul class="contact-list">
+              <li><strong style="font-size: 20px; display: block; text-align: center; margin-top: 12px;">Yu Zhang</strong>
+    <div style="text-align: center; font-size: 14px; color: var(--muted); line-height: 1.4;">
+      PhD Student<br>University of Galway
+    </div></li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:Y.Zhang34@universityofgalway.ie">Y.Zhang34@universityofgalway.ie</a></li>
+              <li><i class="fas fa-phone"></i> <a href="tel:+353874435464">+353 874435464</a></li>
+              <li><i class="fas fa-map-marker-alt"></i> Galway, Ireland</li>
+              <li><i class="fas fa-file-alt"></i> <a href="publications.html">Publications</a> · <a href="cv.html">CV</a></li>
+              <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank">LinkedIn</a></li>
+              <li><i class="fab fa-github"></i> <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a></li>
+              <li><i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a></li>
+            </ul>
+          </aside>
+      
+          <div class="about-main">
+            <h2>About</h2>
+            <p>
+              I am a PhD student in Computer Science at the University of Galway. My research focuses on reinforcement learning and evolutionary computing.
+            </p>
+            <p>
+              I hold dual bachelor’s degrees in Computer Science and Applied Mathematics, and earned an MSc in Artificial Intelligence with First Class Honours.
+            </p>
+            <p>
+              My current work explores adaptive policy learning and hybrid evolutionary algorithms for complex decision-making problems, with applications in healthcare and optimization.
+            </p>
+            <div class="about-two-column">
+              <div class="about-column">
+                <h2>Research Areas</h2>
+                <ul class="compact">
+                  <li>Reinforcement Learning</li>
+                  <li>Evolutionary Computation</li>
+                  <li>Neural Networks</li>
+                </ul>
+              </div>
+            
+              <div class="about-column">
+                <h2>Education</h2>
+                <ul class="compact">
+                  <li><strong>PhD in Computer Science</strong><br>University of Galway, 2025–2029 (Expected)</li>
+                  <li><strong>MSc in Artificial Intelligence</strong><br>University of Galway, 2024–2025</li>
+                  <li><strong>BEng in Computer Science</strong><br>Heilongjiang Univ. of Sci. and Tech., 2020–2024</li>
+                  <li><strong>BSc in Mathematics</strong><br>Heilongjiang Univ. of Sci. and Tech., 2020–2024</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Yu Zhang · Last updated <time id="updated"></time></p>
+      </div>
+    </footer>
+
+    <script>
+      // Highlight active nav item
+      (function(){
+        var links=document.querySelectorAll('.site-nav a');
+        var path=(location.pathname.split('/').pop()||'index.html');
+        links.forEach(function(a){ if(a.getAttribute('href')===path){ a.classList.add('active'); }});
+      })();
+      document.getElementById('year').textContent = new Date().getFullYear();
+      document.getElementById('updated').textContent = new Date().toISOString().slice(0,10);
+    </script>
+  </body>
+  </html>
+
+

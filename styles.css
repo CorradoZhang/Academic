@@ -1,0 +1,155 @@
+:root{
+  --bg:#ffffff;
+  --text:#111418;
+  --muted:#667085;
+  --primary:#1f6feb;
+  --border:#e5e7eb;
+  --card:#fafafa;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,'Apple Color Emoji','Segoe UI Emoji',sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.6;
+}
+
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+
+.site-header{
+  border-bottom:1px solid var(--border);
+  background:#fff;
+  position:sticky;top:0;z-index:10;
+}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:18px 20px}
+.identity h1{margin:0;font-size:28px;letter-spacing:1px}
+.identity .subtitle{margin:4px 0 0;color:var(--muted);font-weight:500;font-size:14px}
+.site-nav{display:flex;gap:14px;flex-wrap:wrap}
+.site-nav a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px}
+.site-nav a:hover{background:#f2f4f7;color:var(--text)}
+.site-nav a.active{color:#0b57d0;background:#e8f0fe}
+
+h2{margin:36px 0 14px;font-size:22px}
+h3{margin:0 0 6px;font-size:18px}
+.muted{color:var(--muted)}
+
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{padding:14px 0;border-bottom:1px solid var(--border)}
+.row{display:flex;gap:16px;align-items:flex-start}
+.col-main{flex:1}
+.col-side{min-width:210px;text-align:right;color:var(--muted)}
+
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px;margin:14px 0}
+.card ul{margin:8px 0 0}
+.card .tags{margin-top:10px;color:var(--muted);font-size:14px}
+
+ul{padding-left:18px}
+ul.compact{margin:0}
+
+#skills .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;padding-left:0;list-style:none}
+#skills .grid li{background:#fff;border:1px solid var(--border);border-radius:10px;padding:12px}
+
+.about .about-wrap{display:flex;gap:18px;align-items:flex-start}
+.about-grid{display:grid;grid-template-columns:260px 1fr;gap:24px}
+.about-sidebar{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px}
+.contact-list{list-style:none;margin:12px 0 0;padding:0;color:var(--muted)}
+.contact-list li{margin:6px 0}
+.about-main {
+  padding: 8px 20px;
+}
+.about-main {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 24px;
+}
+.about {
+  margin-top: 18px;
+}
+.about-main p {
+  margin: 2px 0;
+}
+.avatar{width:108px;height:108px;border-radius:50%;object-fit:cover;border:1px solid var(--border);background:#f3f4f6}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 18px; /* 或更紧凑：12px、8px */
+}
+.site-footer .container{padding:20px;color:var(--muted);font-size:14px;text-align:center}
+
+@media (max-width:720px){
+  .col-side{min-width:auto;text-align:left}
+  .row{flex-direction:column}
+  .site-header .container{align-items:flex-start}
+  .about .about-wrap{flex-direction:column}
+  .about-grid{grid-template-columns:1fr}
+}
+
+
+/* 1. 拉宽左侧联系方式卡片 */
+.about-grid {
+  grid-template-columns: 330px 1fr; /* 原来是 260px */
+}
+
+/* 2. 让头像水平居中，垂直不受影响 */
+.about-sidebar {
+  text-align: center;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  background: #f3f4f6;
+  margin: 0 auto 8px auto;
+  display: block;
+}
+
+.contact-list {
+  text-align: left;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin-bottom: 8px; /* 新增 */
+}
+
+.about-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.about-column h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: var(--text);
+}
+
+.about-column ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.about-column li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* 移动端响应式：改为上下布局 */
+@media (max-width: 720px) {
+  .about-two-column {
+    grid-template-columns: 1fr;
+  }
+}

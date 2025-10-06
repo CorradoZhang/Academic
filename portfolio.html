@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio — Yu Zhang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="identity">
+          <h1>YU ZHANG</h1>
+          <p class="subtitle">PhD Student<br>Computer Science<br>University of Galway</p>
+        </div>
+        <nav class="site-nav">
+          <a href="index.html">About</a>
+          <a href="publications.html">Publications</a>
+          <a href="talks.html">Talks</a>
+          <a href="teaching.html">Teaching</a>
+          <a class="active" href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="cv.html">CV</a>
+          <a href="guide.html">Guide</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h2>Portfolio</h2>
+      <article class="card">
+        <h3>Crack Detection System (Image Processing)</h3>
+        <p class="muted">Python · OpenCV · MATLAB · Vue.js · SpringBoot</p>
+        <p>Lightweight image analysis pipeline with 800+ labeled images; MATLAB Hough Transform and thresholding; real-time web UI.</p>
+      </article>
+      <article class="card">
+        <h3>Autonomous Parking Planner (A*)</h3>
+        <p class="muted">CoppeliaSim · Python · C++</p>
+        <p>Path planning under kinematic constraints with heuristic cost functions; awarded Second Prize at MathorCup.</p>
+      </article>
+    </main>
+    <footer class="site-footer"><div class="container"><p>© <span id="year"></span> Yu Zhang</p></div></footer>
+    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  </body>
+  </html>
+
+

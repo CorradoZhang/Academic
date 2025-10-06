@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV — Yu Zhang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="identity">
+          <h1>YU ZHANG</h1>
+          <p class="subtitle">PhD Student<br>Computer Science<br>University of Galway</p>
+        </div>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="publications.html">Publications</a>
+          <a href="talks.html">Talks</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a class="active" href="cv.html">CV</a>
+          <a href="guide.html">Guide</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h2>Curriculum Vitae</h2>
+      <p>Download the latest CV:</p>
+      <p><a class="button" href="Yu_Zhang_CV.pdf">Download PDF</a> <span class="muted">(place your PDF as <code>Yu_Zhang_CV.pdf</code> in this folder)</span></p>
+      <h3>Summary</h3>
+      <p>PhD student in Computer Science with experience in ML, data modeling, and optimization.</p>
+    </main>
+    <footer class="site-footer"><div class="container"><p>© <span id="year"></span> Yu Zhang</p></div></footer>
+    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  </body>
+  </html>
+
+
